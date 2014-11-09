@@ -1,0 +1,12 @@
+web:
+  image: massmux/flask
+  command: 
+  ports:
+    - "8070:8070"
+    - "2223:22"
+  environment:
+    USERNAME: cliente
+    CONTAINER_ROOT_PASS: test123
+    SSMTP_AUTHUSER: test@test.com
+    SSMTP_AUTHPASS: 123456
+    SSMTP_MAILHUB: gw@example.com
